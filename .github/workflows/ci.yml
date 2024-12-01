@@ -15,7 +15,6 @@ jobs:
       packages: write
       issues: write
       deployments: write
-      secrets: read
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
