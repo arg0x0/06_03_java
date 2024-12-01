@@ -11,9 +11,11 @@ jobs:
     runs-on: ubuntu-20.04
     # TODO: укажите нужные permissions для GITHUB_TOKEN
     permissions:
-      contents: read
+      contents: write
       packages: write
       issues: write
+      deployments: write
+      secrets: read
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
